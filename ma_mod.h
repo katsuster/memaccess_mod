@@ -21,6 +21,8 @@ struct ma_dev {
 
 	dev_t id;
 	struct cdev cdev;
+	struct class *class;
+	struct device *dev;
 };
 
 #endif //MA_MOD_H__
